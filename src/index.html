@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dasbor Integrasi API E-commerce</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <h1>Dasbor Platform E-commerce (Demo Integrasi API)</h1>
+
+    <div class="dashboard-grid">
+        
+        <section class="widget">
+            <h2>Konteks Akun (AccountContext)</h2>
+            <p>Mensimulasikan pengambilan profil pelanggan yang sedang login.</p>
+            <button id="load-user-btn">Muat Profil Pelanggan</button>
+            <div id="user-profile" class="api-result">
+                </div>
+        </section>
+
+        <section class="widget">
+            <h2>Konteks Katalog (CatalogContext)</h2>
+            <p>Mengambil 3 produk teratas dari katalog untuk etalase.</p>
+            <button id="load-products-btn">Muat Produk</button>
+            <div id="product-list" class="api-result">
+                </div>
+        </section>
+
+        <section class="widget">
+            <h2>Konteks Pengiriman (ShippingContext)</h2>
+            <p>Mensimulasikan validasi alamat/wilayah berdasarkan Kode Pos (US).</p>
+            <div class="input-group">
+                <input type="text" id="postal-input" placeholder="Masukkan Kode Pos (cth: 73001)">
+                <button id="check-postal-btn">Cek</button>
+            </div>
+            <div id="postal-result" class="api-result">
+                </div>
+        </section>
+
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
